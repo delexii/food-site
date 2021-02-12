@@ -1,84 +1,115 @@
 body {
-    background-color: #eceaea;
-  }
-
-.flex-container {
-    display: flex;
-    align-items: center;
+  background-color: #eceaea;
 }
 
-    img {
-    width:100%;
-    height: auto;
-    padding:20px;
-    min-width: 500px;  }
-  
-h1{
-    font-size: 40px;
-    color: rgb(151, 151, 204);
-    text-shadow: 2px 2px 1px rgb(41, 26, 43);
-    text-align: center;
-  }
+.grid-container {
+  display: inline-grid;
+  align-content: center;
+  padding: 30px;
+  grid-gap: 50px;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: auto;
+  justify-content: space-evenly;
+}
+
+.grid-container > div {
+  background-color: #d8caca;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.topnav {
+  grid-column: 1/ 4;
+  background-color: #d8caca;
+  padding: 30px;
+  grid-gap: 20px;
+  text-align: center;
+  font-size: 30px;
+  justify-content: center;
+  display: flex;
+}
+
+a:link,
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: rgb(121, 123, 124);
+}
+
+a:active {
+  color: rgb(151, 151, 204);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  min-width: 500px;
+}
+
+h1 {
+  font-size: 40px;
+  color: rgb(151, 151, 204);
+  text-shadow: 2px 2px 1px rgb(41, 26, 43);
+  text-align: center;
+}
 
 p {
-    color: rgb(151, 151, 204);
-    padding: 10px;
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
-  }
+  color: rgb(151, 151, 204);
+  padding: 10px;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
 
-  * {
-    box-sizing: border-box;
-  } 
-
-.row,
-  .row > .column {
-    padding: 8px;
-  }
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(24, 22, 22, 0.2);
-  }
-
-.column {
-    width:100%;
-    float:left;
+* {
+  box-sizing: border-box;
 }
 
 .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-  }
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
 
 .button:hover {
-    background-color: #555;
-  }
-  
+  background-color: #555;
+}
+
 .footer {
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-    padding: 15px;
-  }
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
 
-  @media screen and (min-width: 1500px) {
-    .column {
-      width: 33.2%;
-      display: block;
-    }
+@media screen and (min-width: 1500px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
+}
 
-  @media screen and (min-width:800px) and (max-width: 1499px) {
-    .column {
-      width: 50%;
-    }
+@media screen and (max-width: 1499px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
   }
-  
- 
+}
+
+@media screen and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .topnav {
+    flex-wrap: wrap;
+  }
+}

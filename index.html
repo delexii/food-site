@@ -1,54 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <link
+      title="pagestyle"
+      href="styles/light.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="scripts/script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
     <title>Thunder Prep</title>
   </head>
   <body>
-    <div class="flex-container">
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <div class="container">
-    <img src="images/IMG_0322.jpg" alt="Beef Stew" style="max-width:100%;"/>
-     <h1>Beef Stew</h1>
-     <p>Warm up with one of our comforting beef stew recipes. Choose from slow-cooked beef casseroles, stroganoffs or beef bourguignon for a winning family meal.</p>
-    <p><button class="button">Full recipe</button></p>
-                </div>
-             </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <div class="container">
-    <img src="images/IMG_0289.jpg" alt="Homemade Focaccia" style="max-width:100%;" />
-    <h1>Homemade Focaccia</h1>
-    <p>This delicious Rosemary Focaccia Bread recipe is easy to make, and topped with fresh rosemary, olive oil and flaky sea salt.</p>
-    <p><button class="button">Full recipe</button></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <div class="container">
-    <img src="images/IMG_0297.jpg" alt="Vegan Burgers" style="max-width:100%;" />
-    <h1>Vegan Lentil Burgers</h1>
-    <p>This burger is one of the holy grails of vegetarian cooking. Not only does it contain lots of complementary vegetable protein from its combination of grains and legumes.</p>
-    <p><button class="button">Full recipe</button></p>
-                </div>
-              </div>
-         </div>      
+    <div class="topnav">
+      <a href="#" id="hover">HOME</a>
+      <div>•</div>
+      <a href="#" id="hover">ABOUT</a>
+      <div>•</div>
+      <a href="#" id="hover">INSPO</a>
+      <button id="theme2" onclick="initiate();">Switch themes!</button>
     </div>
-  </div>
+    <div class="grid-container">
+      <div class="item1">
+        <img
+          src="images/IMG_0322.jpg"
+          alt="Beef Stew"
+          style="max-width: 100%"
+        />
+        <h1>Beef Stew</h1>
+        <p>
+          Warm up with one of our comforting beef stew recipes. Choose from
+          slow-cooked beef casseroles, stroganoffs or beef bourguignon for a
+          winning family meal.
+        </p>
+        <p><button class="button">Full recipe</button></p>
+      </div>
 
-<div class="footer"
-><a href="https://www.notion.so/7168b30e1c564f33a3acf7f898cc34f8?v=9a6922c26fa34ce6bbbf46da4ba0836e">For more delicious meal prep recipes click here</a>
-</div>
+      <div class="item2">
+        <img
+          src="images/IMG_0289.jpg"
+          alt="Homemade Focaccia"
+          style="max-width: 100%"
+        />
+        <h1>Homemade Focaccia</h1>
+        <p>
+          This delicious Rosemary Focaccia Bread recipe is easy to make, and
+          topped with fresh rosemary, olive oil and flaky sea salt.
+        </p>
+        <p><button class="button">Full recipe</button></p>
+      </div>
 
+      <div class="item3">
+        <img
+          src="images/IMG_0297.jpg"
+          alt="Vegan Burgers"
+          style="max-width: 100%"
+        />
+        <h1>Vegan Lentil Burgers</h1>
+        <p>
+          This burger is one of the holy grails of vegetarian cooking. Not only
+          does it contain lots of complementary vegetable protein from its
+          combination of grains and legumes.
+        </p>
+        <p><button class="button">Full recipe</button></p>
+      </div>
+
+      <div class="item4">
+        <img
+          src="images/IMG_0289.jpg"
+          alt="Homemade Focaccia"
+          style="max-width: 100%"
+        />
+        <h1>Homemade Focaccia</h1>
+        <p>
+          This delicious Rosemary Focaccia Bread recipe is easy to make, and
+          topped with fresh rosemary, olive oil and flaky sea salt.
+        </p>
+        <p><button class="button">Full recipe</button></p>
+      </div>
+
+      <div class="item5">
+        <img
+          src="images/IMG_0289.jpg"
+          alt="Homemade Focaccia"
+          style="max-width: 100%"
+        />
+        <h1>Homemade Focaccia</h1>
+        <p>
+          This delicious Rosemary Focaccia Bread recipe is easy to make, and
+          topped with fresh rosemary, olive oil and flaky sea salt.
+        </p>
+        <p><button class="button">Full recipe</button></p>
+      </div>
+
+      <div class="item6">
+        <img
+          src="images/IMG_0289.jpg"
+          alt="Homemade Focaccia"
+          style="max-width: 100%"
+        />
+        <h1>Homemade Focaccia</h1>
+        <p>
+          This delicious Rosemary Focaccia Bread recipe is easy to make, and
+          topped with fresh rosemary, olive oil and flaky sea salt.
+        </p>
+        <p><button class="button">Full recipe</button></p>
+      </div>
+    </div>
+    <div class="footer">
+      <a
+        href="https://www.notion.so/7168b30e1c564f33a3acf7f898cc34f8?v=9a6922c26fa34ce6bbbf46da4ba0836e"
+        >For more delicious meal prep recipes click here</a
+      >
+    </div>
   </body>
-
-</html> 
+</html>
