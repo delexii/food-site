@@ -12,13 +12,13 @@ body {
   justify-content: space-evenly;
 }
 
-.grid-container > div {
+.item {
   background-color: #d8caca;
 }
 
-.dark-mode {
-  background-color: black;
+.theme2 {
   color: white;
+  background-color: #000;
 }
 
 .topnav {
@@ -62,7 +62,7 @@ h1 {
 p {
   color: rgb(151, 151, 204);
   padding: 10px;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   text-align: center;
 }
 

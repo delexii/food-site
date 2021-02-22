@@ -1,6 +1,12 @@
-"use-strict";
+'use-strict';
 
-function initiate() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
+const btn = document.querySelector('.theme2');
+const theme = document.querySelector('#theme-link');
+
+btn.addEventListener('click', function () {
+  if (theme.getAttribute('href') == 'styles/light-theme.css') {
+    theme.href = 'styles/dark-theme.css';
+  } else {
+    theme.href = 'styles/light-theme.css';
+  }
+});

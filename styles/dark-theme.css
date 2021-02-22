@@ -1,0 +1,110 @@
+body {
+  background-color: #000000;
+}
+
+.grid-container {
+  display: inline-grid;
+  align-content: center;
+  padding: 30px;
+  grid-gap: 50px;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: auto;
+  justify-content: space-evenly;
+}
+
+.item {
+  background-color: #353434;
+}
+
+.topnav {
+  grid-column: 1/ 4;
+  background-color: #000000;
+  padding: 30px;
+  grid-gap: 20px;
+  text-align: center;
+  font-size: 30px;
+  justify-content: center;
+  display: flex;
+}
+
+a:link,
+a:visited {
+  color: rgb(221, 216, 216);
+}
+
+a:hover {
+  color: rgb(121, 123, 124);
+}
+
+a:active {
+  color: rgb(151, 151, 204);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  min-width: 500px;
+}
+
+h1 {
+  font-size: 40px;
+  color: rgb(221, 216, 216);
+  text-shadow: 2px 2px 1px rgb(41, 26, 43);
+  text-align: center;
+}
+
+p {
+  color: rgb(221, 216, 216);
+  padding: 10px;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.footer {
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+@media screen and (min-width: 1500px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1499px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .topnav {
+    flex-wrap: wrap;
+  }
+}
